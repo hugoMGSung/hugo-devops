@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # run뒤에 실제 작동하는 코드 작성 필요
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: 파이썬 실행 - 무슨...
         run: python sample.py
