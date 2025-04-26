@@ -7,9 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # run뒤에 실제 작동하는 코드 작성 필요
-      - name: hello python 출력!
-        run: echo Hello, Python!
-      - name: 디렉토리 출력!
-        run: ls -al
-      - name: 파이썬 버전 출력
-        run: python --version
+      - uses: actions/checkout@v2
+      - name: 파이썬 실행!
+        run: python sample.py
